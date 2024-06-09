@@ -8,22 +8,45 @@
     <script src="app.js" async></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Milonga&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
 </head>
 <body >
     <div class="image-container">
-        <img src="images/mail_outline.png" id= "mail-icon" alt="mail-icon">
-        <img src="images/profile.JPG" id = "profile-photo" alt="profile picture">
+        <img src="images/mail_outline.png" id= "mail-icon" alt="mail-icon" onclick="open_popup()">
+        <img src="images/Presentation1.1.png" id = "profile-photo" alt="profile picture">
         <div class="overlay-text">
             
             <p>
-                Hi, I'm Gerald.
+                hi, I'm Gerald.
             </p>
 
-            <p id="dynamic-sentence">
-                I'm <u><span id="dynamic-words"></span>.</u>
+            <p id="age_sentence">I'm <u><span id="age-line"></span>.</u></p>
+            <p id="dynamic-sentence" style="display: none;">
+                I'm a <u><span id="dynamic-words"></span>.</u>
             </p>
 
+        </div>
+        
+        <div id="contact-popup" style="display: none;">
+            <img src="images/cancel icon.png" id="cancel-icon" alt="cancel-icon" onclick="close_popup()">
+            <p id="contact-me">Contact me</p>
+
+            <div id="contact-information">
+
+                <form action="send_email.php" method="post">
+
+                    <p>name</p>
+                    <input type="text" name="name" id="name-field" required>
+
+                    <p>email</p>
+                    <input type="email" name="email" id="email-field" required>
+
+                    <p>message</p>
+                    <textarea name="message" id="message-field" rows="6" required></textarea>
+
+                    <input type="submit" value="send" id="send-button"> 
+                </form>
+            </div>
 
         </div>
     </div>
