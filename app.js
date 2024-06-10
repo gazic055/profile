@@ -11,7 +11,7 @@ function close_popup(){
     contact_div.style.display = "none";
 }
 
-function send_email(){
+function alert_message(){
     alert(document.getElementById("message-field").value);
 }
 

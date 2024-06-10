@@ -33,8 +33,6 @@
 
             <div id="contact-information">
 
-                <form action="send_email.php" method="post">
-
                     <p>name</p>
                     <input type="text" name="name" id="name-field" required>
 
@@ -44,10 +42,8 @@
                     <p>message</p>
                     <textarea name="message" id="message-field" rows="6" required></textarea>
 
-                    <input type="submit" value="send" id="send-button"> 
-                </form>
             </div>
-
+                 <button id="send-button" onclick="alert_message()">send</button>
         </div>
     </div>
 </body>
