@@ -6,6 +6,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="app.js" async></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
@@ -35,7 +36,7 @@
 
                 <form action="
                 https://forms.un-static.com/forms/720c3a0bbadf840ac2d27cd30d43b3951ffa5f49" method="post">
-
+                
                     <p>name</p>
                     <input type="text" name="name" id="name-field" required>
 
@@ -45,6 +46,8 @@
                     <p>message</p>
                     <textarea name="message" id="message-field" rows="6" required></textarea>
 
+                    <div class="g-recaptcha" data-sitekey="6Le4a_gpAAAAAOBjViy1qj9pN2a6r5KppwHStJc2
+                    "></div>
                     <input type="submit" value="send" id="send-button"> 
                 </form>
             </div>
