@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" async></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
@@ -46,7 +47,8 @@
                     <p id="message">message</p>
                     <textarea name="message" id="message-field" rows="6" required></textarea>
 
-                    <input type="submit" value="send" id="send-button">
+                    <!-- <input type="submit" value="send" id="send-button"> -->
+                    <button type="submit" id="send-button" onclick="send_email()">send</button>
                     
                     <div class="g-recaptcha" data-sitekey="6Le4a_gpAAAAAOBjViy1qj9pN2a6r5KppwHStJc2
                     "></div>

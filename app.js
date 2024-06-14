@@ -1,3 +1,5 @@
+
+
 //displays the contact div
 function open_popup(){
 
@@ -12,7 +14,13 @@ function close_popup(){
 }
 
 function send_email(){
-    alert(document.getElementById("message-field").value);
+    // Swal.fire({
+    //     title: "Success!",
+    //     text: "Your message has been sent!",
+    //     icon: "success"
+    //   });
+
+    alert("success! your email has been sent");
 }
 
 function sleep(ms){
