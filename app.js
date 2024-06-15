@@ -13,7 +13,7 @@ function close_popup(){
     contact_div.style.display = "none";
 }
 
-function send_email(){
+async function send_email(){
 //     // Swal.fire({
 //     //     title: "Success!",
 //     //     text: "Your message has been sent!",
@@ -21,6 +21,7 @@ function send_email(){
 //     //   });
 
      close_popup();
+     await sleep(1500);
      alert("success! your email has been sent");
 }
 
