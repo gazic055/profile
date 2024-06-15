@@ -20,6 +20,7 @@ function send_email(){
 //     //     icon: "success"
 //     //   });
 
+     close_popup();
      alert("success! your email has been sent");
 }
 
