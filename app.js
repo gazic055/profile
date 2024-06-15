@@ -14,13 +14,13 @@ function close_popup(){
 }
 
 function send_email(){
-    // Swal.fire({
-    //     title: "Success!",
-    //     text: "Your message has been sent!",
-    //     icon: "success"
-    //   });
+//     // Swal.fire({
+//     //     title: "Success!",
+//     //     text: "Your message has been sent!",
+//     //     icon: "success"
+//     //   });
 
-    alert("success! your email has been sent");
+     alert("success! your email has been sent");
 }
 
 function sleep(ms){
