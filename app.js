@@ -20,8 +20,6 @@ async function send_email(){
 //     //     icon: "success"
 //     //   });
 
-     close_popup();
-     await sleep(1500);
      alert("success! your email has been sent");
 }
 
